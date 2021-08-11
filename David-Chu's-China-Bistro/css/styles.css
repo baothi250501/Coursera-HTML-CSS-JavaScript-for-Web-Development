@@ -226,8 +226,7 @@ body {
     font-size: 1em;
     margin-right: 5px;
   }
-  
-    #call-btn > a {
+  #call-btn > a {
     font-size: 1.5em;
     display: block;
     margin: 0 20px;
@@ -243,20 +242,20 @@ body {
     text-transform: uppercase;
   }
   /* End Header */
-  
+
   /* Home Page */
   .container .jumbotron {
     margin-top: 30px;
     padding: 0;
   }
-  
+
   #menu-tile, #specials-tile {
     width: 360px;
     margin: 0 auto 15px;
   }
   /* End Home Page */
-  
-    /* Footer */
+
+  /* Footer */
   .panel-footer section {
     margin-bottom: 30px;
     text-align: center;
@@ -269,7 +268,6 @@ body {
   }
   /* End Footer */
 }
-
 
 /*        Super extra small devices only (iPhone 4)     */
 @media (max-width: 479px) {
