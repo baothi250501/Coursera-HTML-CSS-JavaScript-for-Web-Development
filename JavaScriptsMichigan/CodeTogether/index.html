@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modify the DOM</title>
+    <link rel="stylesheet" href="css/hw2.css">
+    <script src="js/hw2.js"></script>
+</head>
+<body>
+    <h1>Code Together JavaScripts Week 2</h1>
+    <section>
+        <h2>Modify the DOM</h2>
+        <button onclick="document.getElementById('stuff').innerHTML = 'Clicked First Button';">First</button>
+        <button onclick="document.getElementById('stuff').innerHTML = 'Clicked Another Button';">Second</button>
+        <p>This code shouldn't change.</p>
+        <p id="stuff">This will change.</p>
+        <p>This shouldn't change either.</p>
+    </section>
+    <section>
+        <h2>Changing the Style</h2>
+        <button type="button" onclick="openMe()">Open!</button>
+        <button type="button" onclick="closeMe()"">Close!</button>
+        <p id="demo">Extra details...You can open and close this paragraph using the buttons above.</p>
+    </section>
+</body>
+</html>
