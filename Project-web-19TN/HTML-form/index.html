@@ -4,13 +4,109 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>19120376-HTML5</title>
-        <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.0/svgs/brands/html5.svg" />
-        <link rel="stylesheet" href="css/style.css">
+        <title>19120376-HTML5 Form</title>
+        <style>
+            input[type='file'] {
+               color: transparent;
+            }
+        </style>
     </head>
     <body>
         <div id="root">
-            <form
+            <form action="/action_page.php" method="post">
+                <h2>My feedback form</h2>
+                <ul>
+                    <li>
+                        <label for="name">Name:</label>
+                        <input id = "name" name="name" type="text" required>
+                    </li>
+
+                    <li>
+                        <label for="email">Email:</label>
+                        <input id = "email" name="email" type="email" required>
+                    </li>
+
+                    <li>
+                        <label for="pass">Password:</label>
+                        <input id = "pass" name="pass" type="password" required>
+                    </li>
+
+                    <li>
+                        Please check all the emotions that apply to you:
+                        <ul>
+                            <li>
+                                <label for="angry">Angry</label>
+                                <input name = "emotions" id="angry" value="angry" type="checkbox" checked>
+                            </li>
+                            <li>
+                                <label for="sad">Sad</label>
+                                <input name = "emotions" id="sad" value="sad" type="checkbox">
+                            </li>
+                            <li>
+                                <label for="happy">Happy</label>
+                                <input name = "emotions" id="happy" value="happy" type="checkbox">
+                            </li>
+                            <li>
+                                <label for="ambivalent">Ambivalent</label>
+                                <input name = "emotions" id="ambivalent" value="ambivalent" type="checkbox">
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        How satisfied were you with our service?
+                        <ul>
+                            <li>
+                                <label for="very-satisfied">Very satisfied</label>
+                                <input name="feel" id="very-satisfied" value="very-satisfied" type="radio" checked>
+                            </li>
+                            <li>
+                                <label for="satisfied">Satisfied</label>
+                                <input name="feel" id="satisfied" value="satisfied" type="radio">
+                            </li>
+                            <li>
+                                <label for="not-care">Didn't care</label>
+                                <input name="feel" id="not-care" value="not-care" type="radio">
+                            </li>
+                            <li>
+                                <label for="dissatisfied">Dissatisfied</label>
+                                <input name="feel" id="dissatisfied" value="dissatisfied" type="radio">
+                            </li>
+                            <li>
+                                <label for="very-dissatisfied">Very dissatisfied</label>
+                                <input name="feel" id="very-dissatisfied" value="very-dissatisfied" type="radio">
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <label for="more-comments">Further comments:</label>
+                        <textarea id="more-comments" name="more-comments" rows="2"></textarea>
+                    </li>
+
+                    <li>
+                        <label for="bio-photo">Bio photo: </label>
+                        <input type="url" id="bio-photo-url" name="bio-photo-url" readonly>
+                        <input type="file" id="bio-photo" name="bio-photo" accept="image/*">
+                    </li>
+
+                    <li>
+                        <label for="location-visited">Location visited: </label>
+                        <select name="location-visited" id="location-visited" required>
+                            <option value="">Select location</option>
+                            <option value="london">London</option>
+                            <option value="paris">Paris</option>
+                            <option value="new-york">New York</option>
+                          </select>
+                    </li>
+
+                    <li> 
+                        <input type="submit" value="submit">
+                    </li>
+                    
+                </ul>
+            </form>
             
         </div>
     
