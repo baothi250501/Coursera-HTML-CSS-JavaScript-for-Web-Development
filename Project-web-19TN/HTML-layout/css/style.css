@@ -1,0 +1,45 @@
+body{
+    margin:0;
+}
+
+.container{
+    background-color: lightgray;
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+header, aside, article, footer{
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+aside{
+    float:left;
+    margin: 10px 0px;
+    width: calc(30%-22px);
+}
+
+article{
+    float: right;
+    margin-left: 10px;
+    margin-top:10px;
+    width:calc(70%-32px);
+}
+
+.image-container{
+    background-color: yellow;
+}
+
+.image{
+    background-color: lightgray;
+    display: inline-block;
+    padding: 15px 10px;
+    width: calc(100% / 3 - 20px);
+}
+
+footer{
+    clear: both;
+}
