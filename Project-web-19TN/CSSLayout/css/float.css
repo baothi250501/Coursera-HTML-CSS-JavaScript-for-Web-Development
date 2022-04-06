@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+}
+
+.container{
+    background-color: lightgray;
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo, nav, header, aside, article, footer{
+    background-color: gray;
+    padding: 10px;
+}
+
+.logo{
+    text-align: left;
+}
+
+nav, header, aside, article, footer{
+    text-align: center;
+}
+
+nav, header{
+    margin: 10px 0 0 0;
+}
+
+.row {
+    margin: 20px 0;
+    overflow: auto;
+}
+
+aside{
+    float:left;
+    width: calc(30% - 10px * 0.3 - 20px); /* (100% - 10px margin) x 30% - 20px padding - 2px border */  
+    height: 160px;
+}
+
+article{
+    float: right;
+    height: 160px;
+    width: calc(70% - 10px * 0.7 - 20px);
+}
+
+footer{
+    clear: both;
+}

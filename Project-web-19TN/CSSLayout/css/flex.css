@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+}
+
+.container{
+    background-color: lightgray;
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo, nav, header, aside, article, footer{
+    background-color: gray;
+    padding: 10px;
+}
+
+.logo{
+    text-align: left;
+    height: 40px;
+}
+
+nav, header, aside, article, footer{
+    text-align: center;
+}
+
+nav, header{
+    margin: 10px 0 0 0;
+}
+
+nav, footer{
+    height: 25px;
+}
+
+header{
+    height: 80px;
+}
+
+
+.row{
+    display: flex;
+    gap: 20px;
+    margin: 10px 0;
+    overflow: auto;
+}
+
+.col-3{
+    flex-basis: calc(30% - 20px * 0.3 - 20px); /* (100% - 10px gap) x 30% - 20px padding - 2px border   */
+    height: 160px;
+}
+
+.col-7{
+    flex-basis: calc(70% - 20px * 0.7 - 20px); /* (100% - 10px gap) x 70% - 20px padding - 2px border   */
+}
