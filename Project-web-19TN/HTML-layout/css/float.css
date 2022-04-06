@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+}
+
+.container{
+    background-color: lightgray;
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+header, aside, article, footer{
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+aside{
+    float:left;
+    width: calc(30% - 10px * 0.3 - 22px); /* (100% - 10px margin) x 30% - 20px padding - 2px border */  
+    height: 160px;
+}
+
+article{
+    float: right;
+    height: 160px;
+    position: relative;
+    width: calc(70% - 10px * 0.7 - 22px);
+}
+
+.row {
+    margin: 10px 0;
+    overflow: auto;
+}
+
+.image-container{
+    overflow: auto;
+    padding: 0;
+    width: calc(100% - 10px); /* 100% - 10px left */
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.image{
+    background-color: lightgray;
+    padding: 15px 10px;
+    margin: 0 10px 0 0;
+    float: left;
+    width: calc(100% / 3 - 30px); /* 100% / 3 - 3 * 10px margin-right */
+}
+
+footer{
+    clear: both;
+}

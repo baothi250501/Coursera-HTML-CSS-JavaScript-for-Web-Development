@@ -18,29 +18,32 @@ header, aside, article, footer{
 
 .row{
     display: flex;
-    gap:10px;
-    margin:10px 0;
-    height: 150px;
+    gap: 10px;
+    margin: 10px 0;
+    overflow: auto;
 }
 
 .col-3{
-    flex-basis: 30%;
+    flex-basis: calc(30% - 10px * 0.3 - 22px); /* (100% - 10px gap) x 30% - 20px padding - 2px border   */
+    height: 160px;
 }
 
 .col-7{
-    flex-basis: 70%;
+    flex-basis: calc(70% - 10px * 0.7 - 22px); /* (100% - 10px gap) x 70% - 20px padding - 2px border   */
     display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .image-container{
     display: flex;
+    gap: 10px;
+    flex-basis: 100%;
     align-items: flex-end;
 }
 
 .image{
     background-color: lightgray;
-    width: calc(100%/3-20px);
+    padding: 15px 10px;
+    flex-basis: calc(100% / 3 - 20px / 3 -  20px); /* 100% / 3 - 20px gap / 3 - 20px padding  */
 }
