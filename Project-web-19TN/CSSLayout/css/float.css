@@ -1,12 +1,14 @@
 body{
     margin: 0;
+    background-color: lightgray;
 }
 
 .container{
-    background-color: lightgray;
-    padding: 10px;
     width: 80%;
     margin: 0 auto;
+    font-weight: bold;
+    font-size: 14pt;
+    margin-top: 20px;
 }
 
 .logo, nav, header, aside, article, footer{
@@ -16,32 +18,55 @@ body{
 
 .logo{
     text-align: left;
+    height: 40px;
+    font-size: 20pt;
 }
 
 nav, header, aside, article, footer{
     text-align: center;
+    position: relative;
 }
 
 nav, header{
     margin: 10px 0 0 0;
 }
 
+nav, footer{
+    height: 25px;
+}
+
+header{
+    height: 80px;
+}
+
 .row {
-    margin: 20px 0;
+    margin: 10px 0;
     overflow: auto;
 }
 
 aside{
     float:left;
     width: calc(30% - 10px * 0.3 - 20px); /* (100% - 10px margin) x 30% - 20px padding - 2px border */  
-    height: 160px;
+    height: 240px;
 }
 
 article{
     float: right;
-    height: 160px;
+    height: 240px;
     width: calc(70% - 10px * 0.7 - 20px);
 }
+
+article{
+    font-size: 20pt;
+}
+
+.center p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
 footer{
     clear: both;

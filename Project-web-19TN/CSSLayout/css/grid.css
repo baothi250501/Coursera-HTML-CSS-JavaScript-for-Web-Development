@@ -1,12 +1,14 @@
 body{
     margin: 0;
+    background-color: lightgray;
 }
 
 .container{
-    background-color: lightgray;
-    padding: 10px;
     width: 80%;
     margin: 0 auto;
+    font-weight: bold;
+    font-size: 14pt;
+    margin-top: 20px;
 }
 
 .logo, nav, header, aside, article, footer{
@@ -16,20 +18,38 @@ body{
 
 .logo{
     text-align: left;
+    height: 40px;
+    font-size: 20pt;
 }
 
 nav, header, aside, article, footer{
+    display: grid;
     text-align: center;
+    align-content: center;    
 }
 
 nav, header{
     margin: 10px 0 0 0;
 }
 
+header{
+    height: 80px;
+}
+
+nav, footer{
+    height: 25px;
+}
+
+
 .row {
     display: grid;
     grid-template-columns: 3fr 7fr;
     gap: 20px;
     margin: 10px 0;
-    height: 160px;
+    height: 240px;
 }
+
+article{
+    font-size: 20pt;
+}
+

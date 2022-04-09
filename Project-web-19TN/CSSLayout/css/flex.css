@@ -8,6 +8,7 @@ body{
     margin: 0 auto;
     font-weight: bold;
     font-size: 14pt;
+    margin-top: 20px;
 }
 
 .logo, nav, header, aside, article, footer{

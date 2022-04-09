@@ -5,23 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/flex.css">
+    <link rel="stylesheet" href="css/grid.css">
     <title>Demo CSS Layout</title>
 </head>
 
 <body>
     <div class="container">
         <div class="header-nav">
-            <div class="logo">Logo</div>
-            <nav>Navigation</nav>
-            <header>Header / Banner</header>
+            <div class="logo center">Logo</div>
+            <nav class="center"><p>Navigation</p></nav>
+            <header class="center"><p>Header / Banner</p></header>
         </div>
         
         <div class="row">
-            <aside class="col-3">Side Bar</aside>
-            <article class="col-7">Body Area</article>
+            <aside class="col-3 center"><p>Side Bar</p></aside>
+            <article class="col-7 center"><p>Body Area</p></article>
         </div>
-        <footer>Footer</footer>
+        <footer class="center">Footer</footer>
     </div>
 </body>
 
