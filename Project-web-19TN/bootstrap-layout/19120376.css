@@ -1,0 +1,102 @@
+body {
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Changa One', cursive;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 900;
+}
+
+#navbar-header a {
+    font-family: 'Changa One', cursive;
+    padding: 0 1.5rem;
+}
+
+#navbar-header .active {
+    color: #2FA0D5;
+}
+
+#banner{
+    background-image: url("/images/bg_banner.gif");
+}
+
+#banner > div {
+    background: url("/images/logo_bg.png") left top no-repeat, url("/images/search_bg.png") right top no-repeat;
+}
+
+.btn-primary {
+    background-color: #FA97C2 !important;
+}
+
+#banner-small{
+    height: 1rem;
+    background-image: url("/images/bg_banner.gif");
+}
+
+.main-2{
+    background-color: #FA97C2 !important;
+}
+
+.bg-form{
+    border-style: dotted;
+    border-radius: 20px;
+}
+
+.enter-email{
+    font-weight: bold;
+}
+
+.btn-custom{
+    font-family: 'Changa One', cursive;
+    font-weight: bold;
+}
+
+footer{
+    background-image: url("/images/bg_footer.gif");
+}
+
+#navbar-footer a {
+    font-family: 'Changa One', cursive;
+    padding: 0 1.5rem;
+}
+
+#navbar-footer .active {
+    color: #FA97C2;
+}
+
+.time{
+    padding: 3px;
+    background-color: #73C926;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+
+@media (max-width: 576px) {
+    #banner {
+        display: none;
+    }
+
+    #banner-small{
+        display: block;
+    }
+}
+
+@media (min-width: 576px) {
+    #banner {
+        display: block;
+    }
+
+    #banner-small{
+        display: none;
+    }
+}
+
