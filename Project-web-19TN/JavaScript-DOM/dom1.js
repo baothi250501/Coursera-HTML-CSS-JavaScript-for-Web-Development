@@ -14,9 +14,9 @@
 // console.log(document.links);
 
 //GETELEMENTBYID//
-// var headerTitle = document.getElementById('header-title');
-// console.log(headerTitle);
-//headerTitle.textContent = 'Hello';
+ var headerTitle = document.getElementById('header-title');
+ console.log(headerTitle);
+headerTitle.textContent = 'Hello';
 //headerTitle.innerHTML= 'Goodbye';
 //headerTitle.innerHTML = '<h3>Hello</h3>'
 //var header = document.getElementById('main-header');
